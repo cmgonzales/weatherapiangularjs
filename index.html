@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div ng-app="weather" ng-controller="myCtrl">
+        <h1>US Zip code <input type="number" ng-model="zip"></h1>
+        <p>{{zip}}</p>
+        <button ng-click = "datas()">access data</button>
+        <p>{{temp}}</p>
+        <img ng-src="{{img}}" alt="">
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
