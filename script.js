@@ -1,6 +1,7 @@
 var app = angular.module('weather', []);
 app.controller('myCtrl', function($scope, $http) {
     $scope.zip = "";
+    $scope.location = "hayward"
     $scope.today = new Date()
     $scope.datas = function(){
         

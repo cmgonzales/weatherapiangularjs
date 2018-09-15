@@ -15,25 +15,29 @@
     <div ng-app="weather" ng-controller="myCtrl">
             <div class = "container">
                     <div class = "row">
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 background" >
         <h1>Enter a US zip</h1>
             <input type="number" ng-model="zip"> <br>
         <button class = "btn btn-light" ng-click = "datas()">Get weather</button>
-        <h3>{{zip}}</h3>
+        <div>
+        <h3 class = "location">{{zip}}</h3>
+        <span></span><h3 class = "location">{{location}}</h3>
+    </div>    
     </div>
     <div class="col-sm-4" id="temp">
-        <div class = "center">
+        <div class="middle">
         <h1>Today's weather</h1>
         <h3>Date: {{today | date : "MM/dd/y"}} </h3>
         <h1 class = "temp">{{temp}}</h1>
         <h4>{{description}}</h4>
         <h4>{{mintemp}}</h4>
         <h4>{{maxtemp}}</h4>
-      </div>
+    <div>
     </div>
     </div>
     </div>
     </div>
+    <footer>Chris 2018</footer>
       <script src="script.js"></script>
 </body>
 </html>

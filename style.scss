@@ -1,28 +1,48 @@
 $font: 100px;
-
+$padding: 20px;
 .temp{
     font-size: $font;
     
 }
 
 #temp{
-   
-    display: table;
-    height: 100px;
-    align-items: center;
-    text-align: center;
-
+       height: 300px;
+    padding-top: $padding;
 }
 
-.class{
+.middle{
+   padding-top: 80px;
     
-    align-items: center;
 }
-
+.background{
+    background-image: url("img/weather.jpg")
+    
+}
 html {
     border: 5px solid black;
     width:100%;
     height:100%;
     display:block;
     overflow:hidden;
+}
+button{
+    margin-top: 20px;
+
+}
+span{
+    margin-right: 20px;
+}
+.location{
+  display: inline-block;
+}
+
+footer{
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color:black;
+    color: white;
 }

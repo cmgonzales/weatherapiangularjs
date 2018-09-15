@@ -2,13 +2,14 @@
   font-size: 100px; }
 
 #temp {
-  display: table;
-  height: 100px;
-  align-items: center;
-  text-align: center; }
+  height: 300px;
+  padding-top: 20px; }
 
-.class {
-  align-items: center; }
+.middle {
+  padding-top: 80px; }
+
+.background {
+  background-image: url("img/weather.jpg"); }
 
 html {
   border: 5px solid black;
@@ -16,3 +17,21 @@ html {
   height: 100%;
   display: block;
   overflow: hidden; }
+
+button {
+  margin-top: 20px; }
+
+span {
+  margin-right: 20px; }
+
+.location {
+  display: inline-block; }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white; }
