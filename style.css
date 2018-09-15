@@ -1,0 +1,18 @@
+.temp {
+  font-size: 100px; }
+
+#temp {
+  display: table;
+  height: 100px;
+  align-items: center;
+  text-align: center; }
+
+.class {
+  align-items: center; }
+
+html {
+  border: 5px solid black;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden; }

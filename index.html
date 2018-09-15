@@ -8,23 +8,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
     </head>
     <body>
     <div ng-app="weather" ng-controller="myCtrl">
             <div class = "container">
                     <div class = "row">
                         <div class="col-sm-8">
-        <h1>US Zip code <input type="number" ng-model="zip"></h1>
-        <p>{{zip}}</p>
-        <button class = "btn btn-light" ng-click = "datas()">access data</button>
+        <h1>Enter a US zip</h1>
+            <input type="number" ng-model="zip"> <br>
+        <button class = "btn btn-light" ng-click = "datas()">Get weather</button>
+        <h3>{{zip}}</h3>
     </div>
     <div class="col-sm-4" id="temp">
-        <h1>{{temp}}</h1>
+        <div class = "center">
+        <h1>Today's weather</h1>
+        <h3>Date: {{today | date : "MM/dd/y"}} </h3>
+        <h1 class = "temp">{{temp}}</h1>
         <h4>{{description}}</h4>
         <h4>{{mintemp}}</h4>
         <h4>{{maxtemp}}</h4>
       </div>
+    </div>
     </div>
     </div>
     </div>
