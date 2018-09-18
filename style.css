@@ -7,7 +7,8 @@ html {
 
 body {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  font-family: San Francisco; }
 
 .myApp {
   height: 100%; }
@@ -32,6 +33,9 @@ body {
 .middle {
   padding-top: 80px;
   padding-left: 40px; }
+
+input {
+  width: 25% !important; }
 
 button {
   margin-top: 20px; }

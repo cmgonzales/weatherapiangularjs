@@ -1,5 +1,7 @@
 $font: 100px;
 $padding: 20px;
+$font-color: white;
+$sf: San Francisco;
 
 
 html {
@@ -12,6 +14,7 @@ html {
 body{
     height: 100%;
     width: 100%;
+    font-family: $sf;
 }
 
 .myApp{
@@ -28,14 +31,11 @@ height: 100%;
     background-image: url("img/weather.jpg");
     height: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
-    
-   
+    background-size: cover;   
 }
 
 .temp{
-    font-size: $font;
-    
+    font-size: $font;    
 }
 
 #temp{
@@ -49,6 +49,9 @@ height: 100%;
     
 }
 
+input{
+    width: 25% !important;
+}
 
 button{
     margin-top: 20px;
