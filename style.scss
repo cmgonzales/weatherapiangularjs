@@ -55,6 +55,7 @@ input{
 
 button{
     margin-top: 20px;
+    color: rgb(87, 80, 80);
 
 }
 .row{
@@ -70,15 +71,25 @@ span{
 }
 .location{
   display: inline-block;
+  font-family: $sf;
+  padding-top: 40px;
+  padding-left:50px;
 }
 
 footer{
 
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
     background-color:black;
     color: white;
+}
+
+.info{
+    color: $font-color; 
+    font-family: $font;
+    padding-top: 40px;
+    padding-left: 30px;
 }

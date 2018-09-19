@@ -1,12 +1,11 @@
 var app = angular.module('weather', []);
 app.controller('myCtrl', function($scope, $http) {
     $scope.zip = "";
-    $scope.location = "hayward"
     $scope.today = new Date()
     $scope.datas = function(){
         
      var url = "http://api.openweathermap.org/data/2.5/weather?zip=" + $scope.zip + ",us&APPID=764126d68f249066554911a9a05af466"
-
+    
      $http({
         method : "GET",
         url : url
@@ -25,14 +24,20 @@ app.controller('myCtrl', function($scope, $http) {
         }
         $scope.mintemp = "Current Minimum Temp: " + Math.floor(response.data.main.temp_min * 9/5 - 459.67) + "º F";
         $scope.maxtemp = "Current Maximum Temp: " + Math.floor(response.data.main.temp_max * 9/5 - 459.67) + "º F";
+        $scope.location = response.data.name;
         return response.data;
     }, function errorCallback (response) {
         return response;
         
     })
+
+
+
 };
 
+
 });
+
 
 
    

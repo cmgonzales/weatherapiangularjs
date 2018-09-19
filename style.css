@@ -38,7 +38,8 @@ input {
   width: 25% !important; }
 
 button {
-  margin-top: 20px; }
+  margin-top: 20px;
+  color: #575050; }
 
 .row {
   height: 100% !important; }
@@ -51,13 +52,22 @@ span {
   margin-right: 20px; }
 
 .location {
-  display: inline-block; }
+  display: inline-block;
+  font-family: San Francisco;
+  padding-top: 40px;
+  padding-left: 50px; }
 
 footer {
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
   background-color: black;
   color: white; }
+
+.info {
+  color: white;
+  font-family: 100px;
+  padding-top: 40px;
+  padding-left: 30px; }
