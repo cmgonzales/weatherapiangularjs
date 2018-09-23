@@ -2,14 +2,13 @@ $font: 100px;
 $padding: 20px;
 $font-color: white;
 $sf: San Francisco;
-$information-smallscreen: "only screen and (max-width : 920px)";
+$information-smallscreen:  920px;
 
 html {
     border: 5px solid black;
     width:100%;
     height:100%;
-    display:block;
-    overflow:hidden;
+    
 }
 body{
     height: 100%;
@@ -36,6 +35,11 @@ height: 100%;
 
 .temp{
     font-size: $font;    
+
+    @media screen and (max-width: $information-smallscreen) {
+        padding-bottom: 100px;
+      }
+    
 }
 
 #temp{
@@ -96,6 +100,3 @@ footer{
     padding-left: 30px;
 }
 
-@media #{$information-smallscreen} {
-    background: red;
-  }
