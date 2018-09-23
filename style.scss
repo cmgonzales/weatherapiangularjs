@@ -37,7 +37,7 @@ height: 100%;
     font-size: $font;    
 
     @media screen and (max-width: $information-smallscreen) {
-        padding-bottom: 100px;
+        margin-bottom: 100px;
       }
     
 }
